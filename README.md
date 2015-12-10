@@ -13,12 +13,15 @@ This repository contains how-to information for installing/using software, etc.
 
 ### Anaconda (Python Distribution)
 
- - [Installation](conda/conda_install.md#Installation)
+ - [Installation](conda/conda_install.md#Py27Installation)
 
 ### Grace/xmgrace
 
  - [Installation](grace/grace_install.md#Installation)
 
+### guiqwt
+
+ - [Installation](guiqwt/guiqwt_install.md#Py27Installation)
 
 ## Disclaimer
 
