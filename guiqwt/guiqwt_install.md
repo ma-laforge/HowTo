@@ -24,16 +24,13 @@ guiqwt includes a "set of tools for curve and image plotting".  It also includes
 		# Will only register with Python provided by Ubuntu distribution:
 		sudo apt-get install python-guiqwt
 
- 1. [Install PyPlot (+Anaconda)](julia/julia_install.md#PyPlot): To avoid headaches, ensure PyPlot is working once Anaconda is installed.
+ 1. [Install PyPlot (+Anaconda)](../julia/julia_install.md#PyPlot): To avoid headaches, ensure PyPlot is working once Anaconda is installed.
 
- 1. Download/install Pierre's Python libraries, ensuring `$PATH` still makes Anaconda the default `python`:
+ 1. Install guiqwt & dependencies, ensuring `$PATH` still makes Anaconda the default `python`:
 
-		git clone https://github.com/PierreRaybaut/guidata.git
-		git clone https://github.com/PierreRaybaut/PythonQwt.git
-		git clone https://github.com/PierreRaybaut/guiqwt.git
-		cd guidata; python setup.py install
-		cd ../PythonQwt; python setup.py install
-		cd ../guiqwt; python setup.py build install
+		pip install guidata
+		pip install pythonqwt
+		pip install guiqwt
 
  1. Test guiqwt installation:
 
