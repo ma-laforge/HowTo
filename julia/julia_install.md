@@ -50,7 +50,7 @@ The PyPlot installation is usually fairly robust.  However, at the time of writi
  1. Ensure Anaconda uses a working package set.  At the time of writing, the following seems to work:
 
 		# Seems to require all packages specified on a single call:
-		$ conda install numpy=1.9.0 python=2.7.8 cairo=1.12.2 matplotlib=1.4
+		$ conda install numpy=1.9.2 matplotlib=1.4
 
  1. Lanuch Julia:
 
