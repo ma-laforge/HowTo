@@ -44,3 +44,45 @@ guiqwt includes a "set of tools for curve and image plotting".  It also includes
 
 Unclear at the moment.
 
+# guiqwt Installation Issues
+
+The above installation instructions have been observed to generate a less-than-optimal guiqwt solution, though the reason is poorly understood.
+
+**Observed Symptoms**
+
+ - Solution mostly works.
+ - Plotting is slower than with an optimal install.
+ - Plotting will hang (mostly when dealing with large datasets?).
+
+**Workaround (Ubuntu)**
+
+For the moment, a workaround for the Ubuntu platform is to use the version of Python provided by aptitude:
+
+ - python 2.7.6
+ - numpy 1.8.2
+ - guidata 1.6.1
+ - guiqwt 2.3.1
+ - other relevant packages??
+
+Steps:
+
+ 1. Install guiqwt package:
+
+		sudo apt-get install python-guiqwt
+
+ 1. Erase all installed Julia packages:
+
+		$ rm -rf ~/.julia
+
+ 1. Remove anaconda distribution from active path.  Confirm that `python` points to default distribution, `/usr/bin/python`:
+
+		$ which python
+
+ 1. Rebuild PyCall & try loading it:
+
+		$ julia
+		julia> Pkg.build("PyCall")
+		julia> using PyCall
+
+ 1. Re-install C-Data 
+
