@@ -5,10 +5,10 @@ guiqwt includes a "set of tools for curve and image plotting".  It also includes
 
 ## Dependencies
 
- - **guidata**: <https://github.com/PierreRaybaut/guidata>
+ - **guiqwt**: <https://github.com/PierreRaybaut/guiqwt>
  - **PythonQwt**: <https://github.com/PierreRaybaut/PythonQwt>
   - Replaces **PyQwt** (below)?
- - **guiqwt**: <https://github.com/PierreRaybaut/guiqwt>
+ - **guidata**: <https://github.com/PierreRaybaut/guidata>
  - **PyQwt**: <http://pyqwt.sourceforge.net/home.html>
   - *Download page*? <http://sourceforge.net/projects/pyqwt/files/pyqwt5/>
   - *Source now on github*? <https://github.com/PyQwt/PyQwt5>
@@ -40,11 +40,26 @@ guiqwt includes a "set of tools for curve and image plotting".  It also includes
 
 		julia> using PyPlot
 
+## Working Package Set
+
+The following list describes list of dependencies/versions that are known to work:
+
+### Working set A
+
+ - SciPy 0.17.0
+ - NumPy 1.10.4
+ - Pillow 3.1.1
+ - guiqwt 3.0.2
+ - PythonQwt 0.5.5
+ - guidata 1.7.5
+
 # guiqwt Installation (Other platforms)
 
 Unclear at the moment.
 
-# guiqwt Installation Issues
+# guiqwt Installation Issues (**No longer relevant**)
+
+**NOTE:** Above installation now appears to work.  This section is merely left behind to help users that might experience similar installation issues.
 
 The above installation instructions have been observed to generate a less-than-optimal guiqwt solution, though the reason is poorly understood.
 
