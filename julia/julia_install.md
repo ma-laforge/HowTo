@@ -1,17 +1,26 @@
-# Julia How-To
-
 <a name="Installation"></a>
-# Julia Installation
+# Julia: How-To Install
 
 ## Ubuntu Distributions
 
- 1. From the linux shell, run the following commands:
+The `aptitude` package manager is highly recommended for the installation of Julia.  Simply run the following commands from the Linux shell:
 
 		$ sudo add-apt-repository ppa:staticfloat/juliareleases
 		$ sudo apt-get update
 		$ sudo apt-get install julia
 
+
 Should the installation fail, try following the instructions for other operating systems/platforms ([below](#InstallationDefault)).
+
+### Ubuntu (Optional): `curl` Library
+
+It might be a good idea to to install the `curl` library.  `curl` is presently not a proper dependency of Julia, but needed by certain packages.
+
+		sudo apt-get install curl
+
+If `curl` still causes issues, it might be necessary to add a `~/.curlrc` file with the following content (Ubuntu):
+
+		cacert=/etc/ssl/certs/ca-certificates.crt
 
 <a name="InstallationDefault"></a>
 ## Other Operating Systems/Platforms
