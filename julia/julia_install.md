@@ -1,33 +1,23 @@
 <a name="Installation"></a>
 # Julia: How-To Install
 
-## Ubuntu Distributions
+1. Go to the Julia language download page <http://julialang.org/downloads/>.
+1. Download the distribution of Julia that best matches the requirements of your operating system.  The 64-bit version is highly recommended, if supported.
+1. Follow the instructions described on the Julia website: <https://julialang.org/downloads/platform.html>.
 
-The `aptitude` package manager is highly recommended for the installation of Julia.  Simply run the following commands from the Linux shell:
+## Julia Installation Issues
 
-		$ sudo add-apt-repository ppa:staticfloat/juliareleases
-		$ sudo apt-get update
-		$ sudo apt-get install julia
+### `curl` Library (Ubuntu Instructions)
 
+It might be necessary to install the `curl` library on Linux distributions.  Though `curl` is not directly needed by Julia, it is required by certain key packages.
 
-Should the installation fail, try following the instructions for other operating systems/platforms ([below](#InstallationDefault)).
-
-### Ubuntu (Optional): `curl` Library
-
-It might be a good idea to to install the `curl` library.  `curl` is presently not a proper dependency of Julia, but needed by certain packages.
+On Ubuntu systems, the `curl` library can be installed with the following:
 
 		sudo apt-get install curl
 
-If `curl` still causes issues, it might be necessary to add a `~/.curlrc` file with the following content (Ubuntu):
+If `curl` still causes issues, it might be necessary to add a `~/.curlrc` file with the following content:
 
 		cacert=/etc/ssl/certs/ca-certificates.crt
-
-<a name="InstallationDefault"></a>
-## Other Operating Systems/Platforms
-
- 1. Go to the Julia language download page <http://julialang.org/downloads/>.
- 1. Download the distribution of Julia that best matches the requirements of your operating system.  The 64-bit version is highly recommended, if supported.
- 1. Follow the installation instructions from the Julia website.
 
 <a name="PyPlot"></a>
 # PyPlot Package Installation (bash)
